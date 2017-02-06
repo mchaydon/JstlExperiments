@@ -10,13 +10,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>JSTL and EL Examples</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="index.css">
     </head>
     <body>
-        <div>
-            <h4>JSTL Example 1 and 2; EL Example 1</h4>
+        <div class="contentContainer">
+            <h2>JSTL Example 1 and 2; EL Example 1</h2>
             <p>
                 The following form will take four classes, pass them to the controller, and get an object back.
                 Using c:foreach we will loop through and display them using c:out along with loading them by using objectname.property.
@@ -43,20 +44,20 @@
                     <input type="submit" value="Generate">
                 </form>
             </div>
-            <h2>Classes</h2>
+            <h4>Classes Entered</h4>
             <ul>
                 <c:forEach items="${classes}" var="class">
                     <li style="list-style: none"><c:out value="${class.name}"/></li>
                 </c:forEach>
             </ul>
             
-            <h4>JSTL Example 3</h4>
+            <h2>JSTL Example 3</h2>
             <p>
-                The following link will take you to a page using c:import.
-                <a href="externalExample.jsp">Link</a>
+                The following link will take you to a page using c:import.<br>
+                <a href="externalExample.jsp">Click Here</a>
             </p>
             
-            <h4>EL Example 2</h4>
+            <h2>EL Example 2 and 3</h2>
             <p>
                 By using an c:if test we can use if logic in our jsp page. For this example
                 we will be checking if we be the word Java is in the first class name we entered.

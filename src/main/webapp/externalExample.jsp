@@ -10,11 +10,11 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>External Page Load</title>
+        <title>External Page Load Example</title>
     </head>
     <body>
         <h1>Using c:out to load a page inside a page</h1>
-        <a href="index.jsp">Back</a>
+        <a href="index.jsp">Go Back</a>
         <c:import url="http://www.google.com"></c:import>
     </body>
 </html>
